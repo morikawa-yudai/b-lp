@@ -1,175 +1,351 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="B.は採用支援、ホームページ制作、SNS運用、MEO対策、営業支援、AI動画制作を横断して問い合わせ獲得を支援する成長設計パートナーです。"
-    />
-    <title>B. | 問い合わせを生む成長設計パートナー</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="page-glow" aria-hidden="true"></div>
-    <header class="site-header" data-header>
-      <a class="brand" href="#hero" aria-label="B. トップへ戻る">B.</a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
-        <span></span><span></span>
-        <span class="sr-only">メニュー</span>
-      </button>
-      <nav id="site-nav" class="site-nav" aria-label="主要ナビゲーション" data-nav>
-        <a href="#problems">課題</a>
-        <a href="#services">サービス</a>
-        <a href="#results">実績</a>
-        <a href="#reasons">選ばれる理由</a>
-        <a href="#flow">導入の流れ</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, viewport-fit=cover">
+  <title>株式会社B. ＜ビードット＞ | 点から、インパクトへ</title>
+  <meta name="description" content="株式会社B.は、IT事業とスポーツ・美容事業を展開。Web制作、採用支援、映像制作などの企業向けITソリューションと、スポーツジムBITTER、エステ、サッカースクールを通じて、企業と個人の成長をサポートします。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <img src="https://b-dot.jp/wp-content/plugins/bdot-corporate/media/B_logo_white.png" alt="株式会社B." class="header__logo-mark">
+        <img src="https://b-dot.jp/wp-content/plugins/bdot-corporate/media/Bcompany_white.svg" alt="B.company" class="header__logo-text">
+      </a>
+      <nav class="header__nav" id="globalNav">
+        <ul class="header__nav-list">
+          <li><a href="#vision">VISION</a></li>
+          <li><a href="#services">事業内容</a></li>
+          <li><a href="#wellness">ウェルネス</a></li>
+          <li><a href="#company">会社概要</a></li>
+          <li><a href="https://b-dot.jp/contact/" target="_blank" class="header__cta">お問い合わせ</a></li>
+        </ul>
       </nav>
-      <a class="nav-cta" href="#contact">無料相談</a>
-    </header>
+      <button class="header__menu-btn" id="menuBtn" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-nav__list">
+        <li><a href="#vision" class="mobile-nav__link">VISION</a></li>
+        <li><a href="#services" class="mobile-nav__link">事業内容</a></li>
+        <li><a href="#wellness" class="mobile-nav__link">ウェルネス</a></li>
+        <li><a href="#company" class="mobile-nav__link">会社概要</a></li>
+        <li><a href="https://b-dot.jp/contact/" target="_blank" class="mobile-nav__link mobile-nav__link--cta">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <main>
-      <section id="hero" class="hero section">
-        <div class="section-inner hero-layout">
-          <div class="hero-content reveal">
-            <p class="eyebrow">B. Business Landing Partner</p>
-            <h1>問い合わせを、<br />事業の推進力に。</h1>
-            <p class="hero-text">
-              B.は、採用・Web・SNS・MEO・営業・AI動画を横断して、見込み客との接点から問い合わせ獲得までを美しく設計するパートナーです。
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#contact">無料で相談する</a>
-              <a class="button button-ghost" href="#services">支援内容を見る</a>
+  <main>
+
+    <!-- HERO / VISION -->
+    <section class="hero" id="vision">
+      <div class="hero__bg"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow">VISION</p>
+        <h1 class="hero__title">
+          点から、<br>インパクトへ
+        </h1>
+        <p class="hero__subtitle">From dot to impact</p>
+        <div class="hero__scroll">
+          <span>scroll</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION / VISION / VALUE -->
+    <section class="mvv">
+      <div class="mvv__inner">
+        <div class="mvv__item">
+          <p class="mvv__label">MISSION</p>
+          <h2 class="mvv__heading">挑戦する人と企業を、<br>結果で支える。</h2>
+          <p class="mvv__sub">Supporting challengers with results.</p>
+        </div>
+        <div class="mvv__divider"></div>
+        <div class="mvv__item">
+          <p class="mvv__label">VISION</p>
+          <h2 class="mvv__heading">点から、インパクトへ</h2>
+          <p class="mvv__sub">From dot to impact</p>
+        </div>
+        <div class="mvv__divider"></div>
+        <div class="mvv__item">
+          <p class="mvv__label">SLOGAN</p>
+          <h2 class="mvv__heading">挑戦はB.から始まる</h2>
+          <p class="mvv__sub">Challenges Start With B.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE -->
+    <section class="value">
+      <div class="value__inner">
+        <div class="value__header">
+          <p class="section-label">B. VALUE ｜ 5</p>
+        </div>
+        <div class="value__grid">
+          <div class="value__card">
+            <p class="value__num">VALUE 01</p>
+            <h3 class="value__title">向き合う</h3>
+            <p class="value__text">仕事から逃げない。<br>課題・人・数字に、正面から向き合う。</p>
+          </div>
+          <div class="value__card">
+            <p class="value__num">VALUE 02</p>
+            <h3 class="value__title">現場で考える</h3>
+            <p class="value__text">机上ではなく、現場を起点に判断する。<br>事実を見て、聞いて、決める。</p>
+          </div>
+          <div class="value__card">
+            <p class="value__num">VALUE 03</p>
+            <h3 class="value__title">改善し続ける</h3>
+            <p class="value__text">一度で終わらせない。<br>試し、直し、磨くことを止めない。</p>
+          </div>
+          <div class="value__card">
+            <p class="value__num">VALUE 04</p>
+            <h3 class="value__title">成果に責任を持つ</h3>
+            <p class="value__text">過程を大切にしながら、<br>最終的には結果で応える。</p>
+          </div>
+          <div class="value__card">
+            <p class="value__num">VALUE 05</p>
+            <h3 class="value__title">挑戦を背負う</h3>
+            <p class="value__text">挑戦する人と企業の覚悟を理解し、<br>その一歩に本気で伴走する。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIGITAL MARKETING SERVICES -->
+    <section class="services" id="services">
+      <div class="services__inner">
+        <div class="services__header">
+          <p class="section-label">DIGITAL MARKETING デジタルマーケティング事業</p>
+          <h2 class="section-heading">事業内容</h2>
+          <p class="services__lead">株式会社Ｂ．は、5つのサービスを通じて、<br class="sp-none">中小企業の採用・広報・業務改善を支援します。</p>
+        </div>
+        <div class="services__list">
+
+          <div class="service-card" data-index="01">
+            <div class="service-card__img">
+              <img src="https://b-dot.jp/wp-content/plugins/bdot-corporate/media/Services/Boost-JOB.png" alt="Boost JOB">
             </div>
-            <dl class="hero-kpis" aria-label="B.の特徴">
-              <div><dt>6領域</dt><dd>横断支援</dd></div>
-              <div><dt>1窓口</dt><dd>一気通貫</dd></div>
-              <div><dt>最短</dt><dd>成果導線化</dd></div>
-            </dl>
-          </div>
-          <div class="hero-visual reveal" aria-label="問い合わせ獲得までの成長導線">
-            <div class="visual-panel panel-main">
-              <span class="panel-label">Conversion Flow</span>
-              <strong>Contact</strong>
-              <p>認知から問い合わせまで、迷わず進める導線へ。</p>
+            <div class="service-card__body">
+              <p class="service-card__num">01</p>
+              <h3 class="service-card__title">採用課題を解決する採用支援</h3>
+              <p class="service-card__en">Boost JOB — Recruitment Support Service</p>
+              <p class="service-card__text">採用専用サイトの構築・求人票の作成・SNS連携投稿など、求人募集から応募獲得までを一括サポートする採用支援サービス。中小企業の採用活動を効率化し、優秀な人材との出会いを創出します。</p>
+              <a href="https://boost-job.b-dot.jp/" target="_blank" class="service-card__link">詳しく見る →</a>
             </div>
-            <div class="visual-panel panel-card panel-card-a"><span>SNS</span><b>認知拡大</b></div>
-            <div class="visual-panel panel-card panel-card-b"><span>Web</span><b>信頼形成</b></div>
-            <div class="visual-panel panel-card panel-card-c"><span>Sales</span><b>商談化</b></div>
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
+          </div>
+
+          <div class="service-card service-card--reverse" data-index="02">
+            <div class="service-card__img">
+              <img src="https://b-dot.jp/wp-content/plugins/bdot-corporate/media/Services/Boost-SITE.png" alt="Boost SITE">
+            </div>
+            <div class="service-card__body">
+              <p class="service-card__num">02</p>
+              <h3 class="service-card__title">戦略的なサイト制作・運用</h3>
+              <p class="service-card__en">Boost SITE — Website Production & Management</p>
+              <p class="service-card__text">中小企業向けのコーポレートサイトや採用サイトの制作・運用代行。SEOやUI/UXに配慮したサイト改善提案も実施し、ビジネス成果に直結するWebサイトを構築します。</p>
+            </div>
+          </div>
+
+          <div class="service-card" data-index="03">
+            <div class="service-card__img">
+              <img src="https://b-dot.jp/wp-content/plugins/bdot-corporate/media/Services/Boost-MEDIA.png" alt="Boost MEDIA">
+            </div>
+            <div class="service-card__body">
+              <p class="service-card__num">03</p>
+              <h3 class="service-card__title">企業の魅力を発信するメディア</h3>
+              <p class="service-card__en">Boost MEDIA — Corporate Media Production</p>
+              <p class="service-card__text">企業ブランディングや採用広報を目的とした特設メディア・LPの企画・制作。読み物や取材記事を通じて企業の魅力を発信し、ターゲットとの信頼関係を構築します。</p>
+            </div>
+          </div>
+
+          <div class="service-card service-card--reverse" data-index="04">
+            <div class="service-card__img">
+              <img src="https://b-dot.jp/wp-content/plugins/bdot-corporate/media/Services/Boost-FILM.png" alt="Boost FILM">
+            </div>
+            <div class="service-card__body">
+              <p class="service-card__num">04</p>
+              <h3 class="service-card__title">映像で伝える企業の価値</h3>
+              <p class="service-card__en">Boost FILM — Video Production Service</p>
+              <p class="service-card__text">採用動画や会社紹介、社員インタビューなどの映像制作サービス。SNSやサイトに最適化したショート動画にも対応し、視覚的に企業の魅力を伝えます。</p>
+            </div>
+          </div>
+
+          <div class="service-card" data-index="05">
+            <div class="service-card__img">
+              <img src="https://b-dot.jp/wp-content/plugins/bdot-corporate/media/Services/Boost-GBP.png" alt="Boost GBP">
+            </div>
+            <div class="service-card__body">
+              <p class="service-card__num">05</p>
+              <h3 class="service-card__title">すべての人に届くWebサイトへ</h3>
+              <p class="service-card__en">Boost GBP — Web Accessibility Service</p>
+              <p class="service-card__text">Webアクセシビリティの向上を図り、誰もが必要な情報にアクセスできるようサポート。高齢者や障がい者の方々にも使いやすいWebサイトを実現します。</p>
+            </div>
+          </div>
+
+          <!-- AI動画制作 / 営業代行 -->
+          <div class="service-card service-card--reverse" data-index="06">
+            <div class="service-card__img service-card__img--placeholder">
+              <div class="service-placeholder">
+                <span>AI</span>
+              </div>
+            </div>
+            <div class="service-card__body">
+              <p class="service-card__num">06</p>
+              <h3 class="service-card__title">AI動画制作</h3>
+              <p class="service-card__en">AI Video Production</p>
+              <p class="service-card__text">最新のAI技術を活用した映像制作サービス。コスト・スピードを抑えながら、高品質なプロモーション動画や採用動画を制作します。</p>
+            </div>
+          </div>
+
+          <div class="service-card" data-index="07">
+            <div class="service-card__img service-card__img--placeholder">
+              <div class="service-placeholder">
+                <span>営業</span>
+              </div>
+            </div>
+            <div class="service-card__body">
+              <p class="service-card__num">07</p>
+              <h3 class="service-card__title">営業代行</h3>
+              <p class="service-card__en">Sales Agency Service</p>
+              <p class="service-card__text">中小企業の営業活動を代行・支援。リード獲得から商談・クロージングまで、貴社の営業力を強化し、売上拡大をサポートします。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WELLNESS -->
+    <section class="wellness" id="wellness">
+      <div class="wellness__inner">
+        <div class="wellness__header">
+          <p class="section-label">WELLNESS BUSINESS</p>
+          <h2 class="section-heading">ウェルネス事業</h2>
+        </div>
+        <div class="wellness__grid">
+          <div class="wellness__card">
+            <div class="wellness__card-tag">パーソナルジム・エステサロン</div>
+            <h3 class="wellness__card-title">BITTER</h3>
+            <p class="wellness__card-sub">Sports Gym</p>
+            <p class="wellness__card-text">パーソナルジムとエステサロンを併設し、個々の目的に合わせたトレーニングと美容ケアを提供します。姿勢改善・ボディメイク・コンディショニングからリラクゼーションまで、初心者から上級者まで幅広いニーズに対応します。</p>
+            <a href="https://www.ppg-bitter.com/" target="_blank" class="btn-outline">詳しく見る →</a>
+          </div>
+          <div class="wellness__card">
+            <div class="wellness__card-tag">サッカースクール運営</div>
+            <h3 class="wellness__card-title">GLANZ Football Club</h3>
+            <p class="wellness__card-sub">Sports & Career Management</p>
+            <p class="wellness__card-text">GLANZを軸に、競技活動とキャリア形成を両立する支援を展開。サッカースクール運営を通じて、選手・子どもたちの成長を中長期でサポートします。</p>
+            <a href="https://www.instagram.com/glanzfc_official2026" target="_blank" class="btn-outline">詳しく見る →</a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="problems" class="section problems">
-        <div class="section-inner section-title reveal">
-          <p class="eyebrow">Problems</p>
-          <h2>施策を増やしても、問い合わせが増えない理由。</h2>
-          <p>
-            ユーザーは複数の接点を行き来して比較検討します。発信、Web、口コミ、営業資料が分断されていると、魅力が伝わる前に離脱してしまいます。
-          </p>
+    <!-- SPORTS & CAREER MANAGEMENT -->
+    <section class="sports">
+      <div class="sports__inner">
+        <div class="sports__header">
+          <p class="section-label">SPORTS & CAREER MANAGEMENT</p>
+          <h2 class="section-heading">スポーツ・キャリアマネジメント</h2>
         </div>
-        <div class="section-inner card-grid three">
-          <article class="insight-card reveal"><span>01</span><h3>強みが言語化されていない</h3><p>選ばれる理由が曖昧なままでは、競合との違いが伝わりません。</p></article>
-          <article class="insight-card reveal"><span>02</span><h3>接点が点在している</h3><p>SNS、検索、サイト、営業が連動せず、検討温度を高めきれません。</p></article>
-          <article class="insight-card reveal"><span>03</span><h3>問い合わせ導線が弱い</h3><p>CTAやフォームの摩擦が機会損失を生み、成果を取りこぼします。</p></article>
+        <div class="sports__card">
+          <div class="sports__card-tag">キャリアマネジメント支援</div>
+          <h3 class="sports__card-title">デュアルキャリア＆マネジメント</h3>
+          <p class="sports__card-sub">Dual Career Support</p>
+          <p class="sports__card-text">「デュアルキャリア」を軸に現役スポーツ選手のインフルエンサーマネジメント事業を行っています。サッカー選手のまま、B.で働く。そんな新しい働き方を実現しています。</p>
+          <a href="https://b-dot.jp/dual-career/" target="_blank" class="btn-outline">デュアルキャリア採用を見る →</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="services" class="section services">
-        <div class="section-inner split-heading reveal">
-          <div>
-            <p class="eyebrow">Services</p>
-            <h2>問い合わせ獲得に必要な機能を、ひとつのチームで。</h2>
-          </div>
-          <p>B.は単発制作ではなく、ブランド接点を統合して成果へつなげる成長支援を提供します。</p>
+    <!-- COMPANY -->
+    <section class="company" id="company">
+      <div class="company__inner">
+        <div class="company__header">
+          <p class="section-label">COMPANY</p>
+          <h2 class="section-heading">会社概要</h2>
         </div>
-        <div class="section-inner service-list">
-          <article class="service-item reveal"><span>01</span><h3>採用支援</h3><p>採用コンセプト、求人導線、候補者向けコンテンツを整え、応募につながる魅力を設計します。</p></article>
-          <article class="service-item reveal"><span>02</span><h3>ホームページ制作</h3><p>第一印象で信頼を獲得し、問い合わせまで自然に誘導するWebサイトを制作します。</p></article>
-          <article class="service-item reveal"><span>03</span><h3>SNS運用</h3><p>投稿企画、クリエイティブ、分析改善により、継続的な認知とファン形成を支援します。</p></article>
-          <article class="service-item reveal"><span>04</span><h3>MEO対策</h3><p>Googleマップ上の情報整備と口コミ導線を強化し、地域検索からの来店・問い合わせを促進します。</p></article>
-          <article class="service-item reveal"><span>05</span><h3>営業支援</h3><p>営業資料、トーク、リード管理を改善し、問い合わせ後の商談化率を高めます。</p></article>
-          <article class="service-item reveal"><span>06</span><h3>AI動画制作</h3><p>短尺動画やサービス紹介動画をスピーディに制作し、理解促進と訴求力を高めます。</p></article>
+        <div class="company__table-wrap">
+          <table class="company__table">
+            <tbody>
+              <tr>
+                <th>会社名</th>
+                <td>株式会社B.（ビードット）</td>
+              </tr>
+              <tr>
+                <th>事業内容</th>
+                <td>デジタルマーケティング事業 / ウェルネス事業 / スポーツ・キャリアマネジメント事業</td>
+              </tr>
+              <tr>
+                <th>公式サイト</th>
+                <td><a href="https://b-dot.jp/" target="_blank">https://b-dot.jp/</a></td>
+              </tr>
+              <tr>
+                <th>Instagram</th>
+                <td><a href="https://www.instagram.com/b.company.ch/" target="_blank">@b.company.ch</a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </section>
+        <div class="company__links">
+          <a href="https://b-dot.jp/works/" target="_blank" class="company__link-card">
+            <p class="company__link-label">WORKS</p>
+            <p class="company__link-title">事業内容</p>
+            <p class="company__link-desc">デジタルマーケティング事業、ウェルネス事業、スポーツキャリア事業を通じて、企業と個人の成長をサポートします</p>
+            <span class="company__link-arrow">詳しく見る →</span>
+          </a>
+          <a href="https://b-dot.jp/company/" target="_blank" class="company__link-card">
+            <p class="company__link-label">COMPANY</p>
+            <p class="company__link-title">会社概要</p>
+            <p class="company__link-desc">株式会社B.の企業理念、会社情報をご覧いただけます</p>
+            <span class="company__link-arrow">詳しく見る →</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-      <section id="results" class="section results">
-        <div class="section-inner results-panel reveal">
-          <div>
-            <p class="eyebrow">Results</p>
-            <h2>成果を生むための、設計と運用。</h2>
-            <p>市場、競合、顧客心理を整理し、問い合わせまでの体験を継続的に改善します。</p>
-          </div>
-          <div class="result-stats">
-            <div><strong>120+</strong><span>支援プロジェクト</span></div>
-            <div><strong>92%</strong><span>継続・紹介率</span></div>
-            <div><strong>3.4x</strong><span>問い合わせ改善例</span></div>
-          </div>
-        </div>
-      </section>
+    <!-- CONTACT -->
+    <section class="contact">
+      <div class="contact__inner">
+        <p class="section-label">CONTACT</p>
+        <h2 class="contact__heading">お問い合わせ</h2>
+        <p class="contact__text">ご質問・ご相談は<br>お問い合わせフォームから<br>ご連絡ください。</p>
+        <a href="https://b-dot.jp/contact/" target="_blank" class="btn-primary">お問い合わせフォーム</a>
+      </div>
+    </section>
 
-      <section id="reasons" class="section reasons">
-        <div class="section-inner section-title reveal">
-          <p class="eyebrow">Why B.</p>
-          <h2>B.が選ばれる理由</h2>
-        </div>
-        <div class="section-inner card-grid three">
-          <article class="reason-card reveal"><h3>戦略から実装まで一気通貫</h3><p>ヒアリング、訴求設計、制作、運用改善まで同じ思想で進めるため、成果導線がぶれません。</p></article>
-          <article class="reason-card reveal"><h3>高級感とわかりやすさを両立</h3><p>Appleのような余白、質感、動きを取り入れつつ、問い合わせに必要な情報を明快に伝えます。</p></article>
-          <article class="reason-card reveal"><h3>問い合わせ後まで設計</h3><p>獲得して終わりではなく、商談化・採用応募・来店まで見据えて改善を続けます。</p></article>
-        </div>
-      </section>
+  </main>
 
-      <section id="flow" class="section flow">
-        <div class="section-inner split-heading reveal">
-          <div>
-            <p class="eyebrow">Flow</p>
-            <h2>最短で成果導線を立ち上げる4ステップ。</h2>
-          </div>
-        </div>
-        <ol class="section-inner flow-steps">
-          <li class="reveal"><span>01</span><h3>無料相談</h3><p>課題、目標、現状施策をヒアリングします。</p></li>
-          <li class="reveal"><span>02</span><h3>成長設計</h3><p>優先施策、訴求、導線、KPIを整理します。</p></li>
-          <li class="reveal"><span>03</span><h3>制作・実行</h3><p>LP、SNS、動画、営業施策を実装します。</p></li>
-          <li class="reveal"><span>04</span><h3>改善運用</h3><p>データと反応をもとに成果を伸ばします。</p></li>
-        </ol>
-      </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <img src="https://b-dot.jp/wp-content/plugins/bdot-corporate/media/B_logo_white.png" alt="株式会社B.">
+        <p class="footer__tagline">点から、インパクトへ<br>-From dot to impact-</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="https://b-dot.jp/blog/" target="_blank">お知らせ</a>
+        <a href="https://b-dot.jp/works/" target="_blank">事業内容</a>
+        <a href="https://b-dot.jp/company/" target="_blank">会社概要</a>
+        <a href="https://b-dot.jp/dual-career/" target="_blank">デュアルキャリア採用</a>
+        <a href="https://b-dot.jp/contact/" target="_blank">お問い合わせ</a>
+      </nav>
+      <p class="footer__copy">Copyright 2025 株式会社Ｂ． All Rights Reserved.</p>
+    </div>
+  </footer>
 
-      <section id="contact" class="section contact">
-        <div class="section-inner contact-panel">
-          <div class="contact-copy reveal">
-            <p class="eyebrow">Contact</p>
-            <h2>問い合わせが生まれる導線を、今日から。</h2>
-            <p>まずは現状の課題をお聞かせください。B.が最適な進め方をご提案します。</p>
-          </div>
-          <form class="contact-form reveal" action="#" method="post">
-            <label for="name">お名前</label>
-            <input id="name" type="text" name="name" placeholder="山田 太郎" autocomplete="name" required />
-            <label for="company">会社名</label>
-            <input id="company" type="text" name="company" placeholder="株式会社B" autocomplete="organization" />
-            <label for="email">メールアドレス</label>
-            <input id="email" type="email" name="email" placeholder="info@example.com" autocomplete="email" required />
-            <label for="message">ご相談内容</label>
-            <textarea id="message" name="message" rows="5" placeholder="現状の課題や相談したい内容をご記入ください" required></textarea>
-            <button class="button button-primary" type="submit">送信する</button>
-          </form>
-        </div>
-      </section>
-    </main>
+  <a href="#" class="page-top" id="pageTop">↑</a>
 
-    <footer class="site-footer">
-      <a class="brand" href="#hero">B.</a>
-      <p>© 2026 B. Growth Design Studio</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
