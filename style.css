@@ -48,6 +48,8 @@ body::before {
 }
 
 img, svg { max-width: 100%; }
+.skip-link { position: fixed; left: 16px; top: 16px; z-index: 100; transform: translateY(-140%); padding: 10px 14px; border-radius: 999px; background: var(--white); color: var(--black); font-weight: 900; transition: transform 0.2s ease; }
+.skip-link:focus { transform: translateY(0); }
 a { color: inherit; text-decoration: none; }
 p { margin: 0; color: var(--muted); }
 h1, h2, h3 { margin: 0; line-height: 1.02; letter-spacing: -0.06em; }
@@ -67,6 +69,7 @@ h3 { font-size: clamp(1.25rem, 2.2vw, 1.7rem); }
   border: 0;
 }
 
+/* Header */
 .site-header {
   position: fixed;
   top: 18px;
@@ -120,6 +123,7 @@ h3 { font-size: clamp(1.25rem, 2.2vw, 1.7rem); }
 .button-primary { background: var(--white); color: #050505; border-color: var(--white); }
 .button-secondary { background: rgba(255, 255, 255, 0.06); color: var(--white); }
 
+/* Hero */
 .hero { min-height: 100svh; display: grid; align-items: center; padding-top: 154px; overflow: hidden; }
 .hero-marquee { position: absolute; top: 118px; left: -3vw; white-space: nowrap; color: rgba(255, 255, 255, 0.045); font-family: "Inter", sans-serif; font-weight: 900; font-size: clamp(5rem, 15vw, 16rem); line-height: 1; letter-spacing: -0.08em; animation: marquee 22s linear infinite; }
 .hero-layout { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr); gap: 54px; align-items: center; }
@@ -135,6 +139,7 @@ h3 { font-size: clamp(1.25rem, 2.2vw, 1.7rem); }
 .statement-card em { display: block; margin-top: 8px; color: var(--muted); font-style: normal; font-family: "Inter", sans-serif; }
 .scroll-cue { position: absolute; left: 50%; bottom: 28px; transform: translateX(-50%); color: var(--muted); font-family: "Inter", sans-serif; font-size: 0.78rem; letter-spacing: 0.18em; writing-mode: vertical-rl; text-transform: uppercase; }
 
+/* Content sections */
 .philosophy-grid, .split-heading, .contact-panel { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 0.86fr); gap: 54px; align-items: end; }
 .section-heading.center { max-width: 900px; text-align: center; }
 .philosophy-copy { padding: 34px; border-left: 1px solid var(--line); }
@@ -177,6 +182,7 @@ input:focus, textarea:focus, select:focus { border-color: var(--blue-soft); box-
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-32%); } }
 @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.18); opacity: 0.45; } }
 
+/* Responsive */
 @media (max-width: 1080px) {
   .value-list { grid-template-columns: repeat(2, 1fr); }
   .value-card:last-child { grid-column: span 2; }

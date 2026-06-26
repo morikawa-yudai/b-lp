@@ -4,10 +4,12 @@ const menuToggle = document.querySelector('[data-menu-toggle]');
 const revealTargets = document.querySelectorAll('.reveal');
 const statementCards = document.querySelectorAll('.statement-card');
 
+// Keep the floating header legible once the page starts scrolling.
 const updateHeaderState = () => {
   header?.classList.toggle('is-scrolled', window.scrollY > 18);
 };
 
+// Reset mobile navigation state after link clicks or desktop resize.
 const closeMenu = () => {
   nav?.classList.remove('is-open');
   menuToggle?.setAttribute('aria-expanded', 'false');
@@ -22,6 +24,7 @@ nav?.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', closeMenu);
 });
 
+// Reveal sections only once for a restrained, brand-friendly motion style.
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -35,6 +38,7 @@ const revealObserver = new IntersectionObserver(
 
 revealTargets.forEach((target) => revealObserver.observe(target));
 
+// Rotate the three brand statements without requiring user interaction.
 let activeStatement = 0;
 setInterval(() => {
   if (statementCards.length === 0) return;
